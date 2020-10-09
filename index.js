@@ -196,9 +196,14 @@ Use the getAverageWordLength function below to do the following:
 */
 
 function getAverageWordLength(arr){
-
+    let count = 0;
+for(let i = 0; i < arr.length; i++){
+    let words = arr[i].split(" ");
+    count = count + words.length;
+}
+return Math.round(count/arr.length);
  }   
-
+console.log(getAverageWordLength(originalFlavors))
 
 getAverageWordLength(originalFlavors);
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪
